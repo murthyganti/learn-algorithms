@@ -13,7 +13,6 @@ def bubbleSort(inputArray):
     return inputArray # Return sorted array.
 
 # tests
-
 print(bubbleSort([4,8,1,14,8,2,9,5,7,6,6]))
 
 
