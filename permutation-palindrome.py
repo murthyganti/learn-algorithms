@@ -83,6 +83,7 @@ Finally, we just need to check if less than two characters don’t have a pair.
 
 '''
 import unittest
+from itertools import permutations
 
 
 def has_palindrome_permutation(the_string):
@@ -102,9 +103,18 @@ def has_palindrome_permutation(the_string):
     return palindrom_result
 
 
-    
+# Finding all possible permutations of a given string in python. returns list of tuples.
+# We use python's itertools.
+def permutation_pairs(input_string):
+    # let's return all permutations in an array
+    result = []
+    for permutation in permutations(input_string):
+        result.append(permutation)
+    return result
 
-    return False
+
+print(permutation_pairs('civic'))
+# print(permutation_pairs('hhahh'))
 
 
 
